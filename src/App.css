@@ -2,21 +2,45 @@
   border: 2px solid black;
   /* padding: 20px; */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-  position: relative;
+  gap: 20px;
+  /* overflow: hidden;
+  position: relative; */
 }
 
 .box-1 {
   background-color: red;
   height: 150px;
-  width: 100%;
+  width: 150px;
   transition-duration: 500ms;
   transition-timing-function: ease;
-  position: absolute;
+  /* position: absolute; */
+}
+
+.box-2 {
+  background-color: green;
+  height: 150px;
+  width: 150px;
+  transition-duration: 500ms;
+  transition-timing-function: ease;
+  /* transform-origin: top left; */
+  /* position: absolute; */
 }
 
 .box-1:hover{
-  transform: translateY(300px);
+  /* transform: translateY(300px); */
+  /* transform: scale(0.05); */
+  /* transform: rotate(45deg); */
+  transform: rotate(45deg);
+}
+
+.box-2:hover{
+  /* transform: rotate(180deg); */
+  transform: skew(45deg);
+}
+
+.box-container-2 {
+  /* overflow: hidden; */
 }
